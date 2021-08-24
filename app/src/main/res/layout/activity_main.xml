@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity"
+    >
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="25dp"
+                android:text="BMI Calculator"
+                android:textColor="#000000"
+                android:textSize="45sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="69dp" >
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="MALE"
+                    android:textColor="@color/black"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:text="FEMALE"
+                    android:textColor="@color/black"
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Weight in kg"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+
+                />
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:padding="12dp"
+                android:inputType="numberDecimal"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/edit_bg"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Height in cm"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="15dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+
+                />
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:padding="12dp"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edit_bg"
+                />
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="15dp"
+                android:text="Calculate"
+                android:background="@drawable/btn_bg"
+                android:textColor="#fafafa"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Your Result"
+                android:textSize="40sp"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textColor="#000"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Underweight      0-18.5"
+                android:textSize="20sp"
+                android:textColor="#4AD0E6"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Normal Weight      18.5–24.9"
+                android:textSize="20sp"
+                android:textColor="#669933"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Overweight      25-29.9"
+                android:textSize="20sp"
+                android:textColor="#F68428"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Obesity      30 or greater"
+                android:textSize="20sp"
+                android:textColor="#ED1F27"
+                />
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>
